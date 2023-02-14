@@ -1,0 +1,299 @@
+Started GET "/" for ::1 at 2023-02-09 19:52:00 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 47.2ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 951.3ms | Allocations: 91156)
+Completed 200 OK in 1017ms (Views: 971.4ms | ActiveRecord: 0.0ms | Allocations: 97784)
+
+
+Started GET "/" for ::1 at 2023-02-09 19:56:46 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 2872)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.0ms | Allocations: 3872)
+
+
+Started GET "/" for ::1 at 2023-02-09 19:58:24 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 6.4ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 2867)
+Completed 200 OK in 36ms (Views: 32.9ms | Allocations: 3865)
+
+
+Started GET "/" for ::1 at 2023-02-09 19:59:14 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 124)
+  Rendered shared/_nav.html.erb (Duration: 3.8ms | Allocations: 354)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 3361)
+Completed 200 OK in 32ms (Views: 26.3ms | Allocations: 4358)
+
+
+Started GET "/" for ::1 at 2023-02-09 19:59:17 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_nav.html.erb (Duration: 0.3ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 59.2ms | Allocations: 2600)
+Completed 200 OK in 62ms (Views: 60.8ms | Allocations: 2910)
+
+
+Started GET "/" for ::1 at 2023-02-09 19:59:21 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_nav.html.erb (Duration: 1.9ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 52.5ms | Allocations: 2609)
+Completed 200 OK in 55ms (Views: 53.6ms | Allocations: 2921)
+
+
+Started GET "/" for ::1 at 2023-02-09 20:01:08 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered shared/_nav.html.erb (Duration: 0.3ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 104.9ms | Allocations: 14039)
+Completed 200 OK in 112ms (Views: 110.4ms | Allocations: 14773)
+
+
+Started GET "/" for ::1 at 2023-02-09 20:06:24 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered shared/_nav.html.erb (Duration: 0.4ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 56.5ms | Allocations: 13969)
+Completed 200 OK in 61ms (Views: 58.8ms | Allocations: 14702)
+
+
+Started GET "/" for ::1 at 2023-02-09 20:07:29 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.5ms | Allocations: 126)
+  Rendered shared/_nav.html.erb (Duration: 41.2ms | Allocations: 5660)
+  Rendered layout layouts/application.html.erb (Duration: 71.9ms | Allocations: 8648)
+Completed 500 Internal Server Error in 84ms (Allocations: 9625)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'About', root_path %></li>
+    <li><%= link_to 'Order', root_path %></li>
+    <li><%= link_to 'Gallery', root_path %></li>
+    <li>
+    <%= form_with url: "/site_search_search", method: :get do |form| %> <%= form.label
+    :query, "Search for:" %> <%= form.text_field :query %> <%= form.submit
+    "Search" %> <% end %>
+  </li>
+</ul>
+):
+1:    <ul>
+2:        <li><%= link_to 'Home', root_path %></li>
+3:        <li><%= link_to 'About', root_path %></li>
+4:        <li><%= link_to 'Order', root_path %></li>
+5:        <li><%= link_to 'Gallery', root_path %></li>
+6:        <li>
+7:        <%= form_with url: "/site_search_search", method: :get do |form| %> <%= form.label
+8:        :query, "Search for:" %> <%= form.text_field :query %> <%= form.submit
+9:        "Search" %> <% end %>
+10:      </li>
+11:    </ul>
+  
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2023-02-09 20:08:27 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 123)
+  Rendered shared/_nav.html.erb (Duration: 2.0ms | Allocations: 1289)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4288)
+Completed 500 Internal Server Error in 32ms (Allocations: 5249)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'About', root_path %></li>
+    <li><%= link_to 'Order', root_path %></li>
+    <li><%= link_to 'Gallery', root_path %></li>
+    <li>
+    <%= form_with url: "/site_search/search", method: :get do |form| %> <%= form.label
+    :query, "Search for:" %> <%= form.text_field :query %> <%= form.submit
+    "Search" %> <% end %>
+  </li>
+</ul>
+):
+1:    <ul>
+2:        <li><%= link_to 'Home', root_path %></li>
+3:        <li><%= link_to 'About', root_path %></li>
+4:        <li><%= link_to 'Order', root_path %></li>
+5:        <li><%= link_to 'Gallery', root_path %></li>
+6:        <li>
+7:        <%= form_with url: "/site_search/search", method: :get do |form| %> <%= form.label
+8:        :query, "Search for:" %> <%= form.text_field :query %> <%= form.submit
+9:        "Search" %> <% end %>
+10:      </li>
+11:    </ul>
+  
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2023-02-09 20:09:07 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 123)
+  Rendered shared/_nav.html.erb (Duration: 3.6ms | Allocations: 1289)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 4288)
+Completed 500 Internal Server Error in 37ms (Allocations: 5249)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'About', root_path %></li>
+    <li><%= link_to 'Order', root_path %></li>
+    <li><%= link_to 'Gallery', root_path %></li>
+    <li>
+    <%= form_with url: "/site_search/search/site_search.rb", method: :get do |form| %> <%= form.label
+    :query, "Search for:" %> <%= form.text_field :query %> <%= form.submit
+    "Search" %> <% end %>
+  </li>
+</ul>
+):
+1:    <ul>
+2:        <li><%= link_to 'Home', root_path %></li>
+3:        <li><%= link_to 'About', root_path %></li>
+4:        <li><%= link_to 'Order', root_path %></li>
+5:        <li><%= link_to 'Gallery', root_path %></li>
+6:        <li>
+7:        <%= form_with url: "/site_search/search/site_search.rb", method: :get do |form| %> <%= form.label
+8:        :query, "Search for:" %> <%= form.text_field :query %> <%= form.submit
+9:        "Search" %> <% end %>
+10:      </li>
+11:    </ul>
+  
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2023-02-09 20:10:17 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_nav.html.erb (Duration: 3.1ms | Allocations: 1281)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 3785)
+Completed 500 Internal Server Error in 24ms (Allocations: 4061)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'About', root_path %></li>
+    <li><%= link_to 'Order', root_path %></li>
+    <li><%= link_to 'Gallery', root_path %></li>
+    <li>
+    <%= form_with url: "/site_search/search/site_search.rb", method: :get do |form| %> <%= form.label
+    :query, "Search for:" %> <%= form.text_field :query %> <%= form.submit
+    "Search" %> <% end %>
+  </li>
+</ul>
+):
+1:    <ul>
+2:        <li><%= link_to 'Home', root_path %></li>
+3:        <li><%= link_to 'About', root_path %></li>
+4:        <li><%= link_to 'Order', root_path %></li>
+5:        <li><%= link_to 'Gallery', root_path %></li>
+6:        <li>
+7:        <%= form_with url: "/site_search/search/site_search.rb", method: :get do |form| %> <%= form.label
+8:        :query, "Search for:" %> <%= form.text_field :query %> <%= form.submit
+9:        "Search" %> <% end %>
+10:      </li>
+11:    </ul>
+  
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/shared/_nav.html.erb:8: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2023-02-09 20:10:34 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 123)
+  Rendered shared/_nav.html.erb (Duration: 5.1ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 3315)
+Completed 200 OK in 28ms (Views: 25.0ms | Allocations: 4306)
+
+
+Started GET "/" for ::1 at 2023-02-09 20:17:26 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 6.1ms | Allocations: 123)
+  Rendered shared/_nav.html.erb (Duration: 51.9ms | Allocations: 5479)
+  Rendered layout layouts/application.html.erb (Duration: 91.6ms | Allocations: 8463)
+Completed 200 OK in 99ms (Views: 97.1ms | Allocations: 9456)
+
+
+Started GET "/" for ::1 at 2023-02-09 20:18:58 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 126)
+  Rendered shared/_nav.html.erb (Duration: 5.2ms | Allocations: 1622)
+  Rendered layout layouts/application.html.erb (Duration: 63.5ms | Allocations: 15950)
+Completed 200 OK in 68ms (Views: 66.8ms | Allocations: 16974)
+
+
+Started GET "/" for ::1 at 2023-02-09 20:21:07 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.8ms | Allocations: 123)
+  Rendered shared/_nav.html.erb (Duration: 7.6ms | Allocations: 1672)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 4646)
+Completed 200 OK in 33ms (Views: 31.1ms | Allocations: 5637)
+
+
+Started GET "/site_search/search?query=birthday&commit=Search" for ::1 at 2023-02-09 20:21:17 -0600
+  
+ActionController::RoutingError (uninitialized constant SiteSearch::SearchController):
+  
+Started GET "/" for ::1 at 2023-02-09 20:21:17 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_nav.html.erb (Duration: 2.3ms | Allocations: 1338)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3841)
+Completed 200 OK in 11ms (Views: 10.1ms | Allocations: 4148)
+
+
